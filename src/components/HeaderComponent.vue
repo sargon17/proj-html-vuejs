@@ -22,48 +22,14 @@
 import logo from "../assets/theme_eduprime_logo.png";
 import ButtonElement from "./sub_components/ButtonElement.vue";
 import NavigationDropdown from "./sub_components/NavigationDropdown.vue";
+import headerNavigationData from "../data/headerNavigationData";
 
 export default {
   name: "HeaderComponent",
   data() {
     return {
       logo,
-      navLinks: [
-        {
-          title: "Home",
-          url: "#",
-          hasDropdown: true,
-          dropDownData: [
-            {
-              title: "Home",
-              url: "#",
-            },
-            {
-              title: "Home",
-              url: "#",
-            },
-            {
-              title: "Home",
-              url: "#",
-            },
-          ],
-        },
-        {
-          title: "About",
-          url: "#",
-          hasDropdown: false,
-        },
-        {
-          title: "Courses",
-          url: "#",
-          hasDropdown: false,
-        },
-        {
-          title: "Contact",
-          url: "#",
-          hasDropdown: false,
-        },
-      ],
+      navLinks: headerNavigationData,
     };
   },
   components: {
@@ -83,10 +49,10 @@ export default {
   width: 100%;
   height: 75px;
   z-index: 5;
-  padding: 20px 0;
+  padding: 20px 36px;
 
   &__container {
-    max-width: $mt-screen-lg;
+    max-width: $mt-screen-xl;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -109,7 +75,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    overflow: hidden;
     gap: 20px;
   }
 }

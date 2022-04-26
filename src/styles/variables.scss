@@ -6,15 +6,24 @@ $mt-red-transparent: #da5f60e6;
 $mt-red: #e56768;
 $mt-yellow: #e9d758;
 $mt-white: #fff;
+$mt-black: #000;
+$mt-gray: #323232;
+$mt-white-gray: #ebebeb;
 
 // font sizes
-$mt-font-size-xxs: 12px;
+$mt-font-size-xxs: 0.618rem;
 $mt-font-size-xs: 1rem;
-$mt-font-size-sm: 16px;
-$mt-font-size-md: 18px;
-$mt-font-size-lg: 20px;
-$mt-font-size-xl: 24px;
-$mt-font-size-xxl: 28px;
+$mt-font-size-sm: 1.618rem;
+$mt-font-size-md: 2rem;
+$mt-font-size-lg: 3rem;
+$mt-font-size-xl: 4rem;
+
+// font weights
+$mt-font-weight-light: 300;
+$mt-font-weight-regular: 400;
+$mt-font-weight-medium: 500;
+$mt-font-weight-bold: 700;
+$mt-font-weight-black: 900;
 
 // Breakpoints
 $mt-screen-xxs: 0px;
@@ -40,3 +49,22 @@ $mt-btn-tertiary-bg: $mt-white;
 $mt-btn-tertiary-bg-hover: $mt-yellow;
 $mt-btn-tertiary-color: $mt-red;
 $mt-btn-tertiary-color-hover: $mt-white;
+
+// transition
+$mt-transition: all 0.3s ease-in-out;
+
+// border radius
+$mt-border-radius-sm: 0.125rem;
+$mt-border-radius-md: 0.25rem;
+$mt-border-radius-lg: 0.5rem;
+$mt-border-radius-xl: 1rem;
+
+// spacing
+$mt-spacing-xs: 0.25rem;
+$mt-spacing-sm: 0.5rem;
+$mt-spacing-md: 1rem;
+$mt-spacing-lg: 2rem;
+$mt-spacing-xl: 4rem;
+
+// shadows
+$mt-shadow-default: 0 10px 15px -4px rgba(23, 23, 23, 0.2);

@@ -36,15 +36,15 @@ export default {
 
 .heading {
   & > h2 {
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: $mt-font-size-lg;
+    font-weight: $mt-font-weight-black;
     line-height: 1.2;
     margin-bottom: 2rem;
     font-family: $mt-font-family-accent;
   }
   & > p {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: $mt-font-size-xs;
+    font-weight: $mt-font-weight-regular;
     line-height: 1.7;
     margin-bottom: 2rem;
     font-family: $mt-font-family;

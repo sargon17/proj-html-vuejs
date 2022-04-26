@@ -1,26 +1,42 @@
 <template>
   <div class="nav-dropdown">
     <ul class="nav-dropdown__list">
-      <li
-        class="nav-dropdown__list-item"
+      <NavDropdownItem
         v-for="item in data"
         :key="item.title"
-      >
-        <a :href="item.url">
-          {{ item.title }}
-        </a>
-      </li>
+        :value="item"
+        :isSelected="checkCurrentSelectedMenu(item.id)"
+        @setSelectedMenu="setSelectedMenu"
+      />
     </ul>
   </div>
 </template>
 
 <script>
+import NavDropdownItem from "./NavDropdownItem.vue";
+
 export default {
   name: "NavigationDropdown",
+  data() {
+    return {
+      currentSelectedMenu: "about",
+    };
+  },
+  components: {
+    NavDropdownItem,
+  },
   props: {
     data: {
       type: Array,
       required: true,
+    },
+  },
+  methods: {
+    checkCurrentSelectedMenu(id) {
+      return this.currentSelectedMenu === id;
+    },
+    setSelectedMenu(id) {
+      this.currentSelectedMenu = id;
     },
   },
 };
@@ -36,25 +52,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem 1rem;
-      font-size: 1.2rem;
-      color: #fff;
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        background-color: #fff;
-        color: #000;
-      }
-      a {
-        color: $mt-white;
-      }
-    }
+    gap: $mt-spacing-xs;
   }
 }
 </style>

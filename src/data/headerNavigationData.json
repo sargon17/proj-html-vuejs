@@ -1,0 +1,124 @@
+[
+  {
+    "title": "Home",
+    "id": "home",
+    "url": "#",
+    "hasDropdown": true,
+    "dropDownData": [
+      {
+        "title": "Home",
+        "url": "#"
+      },
+      {
+        "title": "Home",
+        "url": "#"
+      },
+      {
+        "title": "Home",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "title": "Courses",
+    "id": "courses",
+    "url": "#",
+    "hasDropdown": true,
+    "dropDownData": [
+      {
+        "title": "Course 1",
+        "url": "#"
+      },
+      {
+        "title": "Course 2",
+        "url": "#"
+      },
+      {
+        "title": "Course 3",
+        "url": "#"
+      },
+      {
+        "title": "Course 4",
+        "url": "#"
+      },
+      {
+        "title": "Course 5",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "title": "About Us",
+    "id": "about",
+    "url": "#",
+    "hasDropdown": false
+  },
+  {
+    "title": "News",
+    "id": "news",
+    "url": "#",
+    "hasDropdown": true,
+    "dropDownData": [
+      {
+        "title": "News 1",
+        "url": "#"
+      },
+      {
+        "title": "News 2",
+        "url": "#"
+      },
+      {
+        "title": "News 3",
+        "url": "#"
+      },
+      {
+        "title": "News 4",
+        "url": "#"
+      },
+      {
+        "title": "News 5",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "title": "Pages",
+    "id": "pages",
+    "url": "#",
+    "hasDropdown": true,
+    "dropDownData": [
+      {
+        "title": "Page 1",
+        "url": "#"
+      },
+      {
+        "title": "Page 2",
+        "url": "#"
+      },
+      {
+        "title": "Page 3",
+        "url": "#"
+      },
+      {
+        "title": "Page 4",
+        "url": "#"
+      },
+      {
+        "title": "Page 5",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "title": "Contact",
+    "id": "contact",
+    "url": "#",
+    "hasDropdown": false
+  },
+  {
+    "title": "Purchase",
+    "id": "purchase",
+    "url": "#",
+    "hasDropdown": false
+  }
+]
