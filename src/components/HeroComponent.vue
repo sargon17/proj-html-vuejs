@@ -1,8 +1,23 @@
 <template>
   <div class="hero">
     <div class="hero__content">
-      <h1 class="title">Some title</h1>
-      <p class="subtitle">Some subtitle</p>
+      <HeadingText :type="'white'" :align="'center'">
+        <template #title> Key to your success </template>
+        <template #rich>
+          EduPrime is the most versatile WordPress theme for educational
+          purposes, showcasing universities, courses, secondary shools etc.
+        </template>
+      </HeadingText>
+      <div class="hero__content__buttons-container">
+        <ButtonElement :variant="'primary'" :dimensions="xl">
+          <font-awesome-icon icon="fa-solid fa-magnifying-glass" /> Search
+          courses
+        </ButtonElement>
+        <ButtonElement :variant="'tertiary'" :dimensions="xl">
+          <font-awesome-icon icon="fa-solid fa-user-plus" />
+          Apply for university
+        </ButtonElement>
+      </div>
     </div>
     <div class="hero__bg">
       <div class="hero__bg-waves">
@@ -19,13 +34,24 @@
 <script>
 import bgImg from "../assets/theme_slider1_bg-1.jpg";
 import wave from "../assets/Wave-1.png";
+import HeadingText from "./sub_components/HeadingText.vue";
+import ButtonElement from "./sub_components/ButtonElement.vue";
+
 export default {
   name: "HeroComponent",
   data() {
     return {
       bgImg,
       wave,
+      headerText: {
+        title: "This title",
+        rich: "Some subtitle",
+      },
     };
+  },
+  components: {
+    HeadingText,
+    ButtonElement,
   },
 };
 </script>
@@ -38,6 +64,24 @@ export default {
   height: 90vh;
   width: 100%;
   overflow: hidden;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 3;
+    max-width: 30%;
+
+    &__buttons-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+
   &__bg {
     position: absolute;
     top: 0;
@@ -59,7 +103,7 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $mt-bg-red-transparent;
+      background-color: $mt-red-transparent;
       z-index: 0;
     }
     &-waves {

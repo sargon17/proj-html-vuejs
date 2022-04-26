@@ -25,4 +25,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/general.scss";
+.app {
+  position: relative;
+}
 </style>
