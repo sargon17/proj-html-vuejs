@@ -9,7 +9,7 @@
               :src="content.initialImg.path"
               :width="'60px'"
             />
-            <HeadingText>
+            <HeadingText :textAlign="'left'">
               <template #title>
                 {{ content.title }}
               </template>

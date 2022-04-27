@@ -1,5 +1,6 @@
 <template>
-  <div class="heading" :class="{ white: isWhite, black: !isWhite }">
+  <div class="heading" :class="headingClasses">
+    <ImgElement :src="icon" :width="'100px'" />
     <h2>
       <slot name="title"></slot>
     </h2>
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import ImgElement from "./ImgElement.vue";
 export default {
   name: "HeadingText",
   data() {
@@ -17,15 +19,35 @@ export default {
       //   isWhite: false,
     };
   },
+  components: {
+    ImgElement,
+  },
   props: {
     type: {
       type: String,
       default: "black",
     },
+    icon: {
+      type: String,
+      default: "",
+    },
+    textAlign: {
+      type: String,
+      default: "center",
+    },
   },
   computed: {
     isWhite() {
       return this.type === "white";
+    },
+    headingClasses() {
+      return {
+        "text-center": this.textAlign === "center",
+        "text-right": this.textAlign === "right",
+        "text-left": this.textAlign === "left",
+        "text-white": this.isWhite,
+        "text-black": !this.isWhite,
+      };
     },
   },
 };
@@ -51,16 +73,25 @@ export default {
   }
 }
 
-.white {
+.text-white {
   color: #fff;
   & * {
     color: #fff;
   }
 }
-.black {
+.text-black {
   color: $mt-text-color;
   & * {
     color: $mt-text-color;
   }
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
 }
 </style>
