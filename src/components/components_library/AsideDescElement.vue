@@ -4,7 +4,11 @@
       <template #element-1>
         <ContainerElement :contentPosition="'center center'">
           <div>
-            <ImgElement :src="content.initialImg.path" :width="'60px'" />
+            <ImgElement
+              v-if="content.hasInitialImg"
+              :src="content.initialImg.path"
+              :width="'60px'"
+            />
             <HeadingText>
               <template #title>
                 {{ content.title }}

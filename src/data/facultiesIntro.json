@@ -1,0 +1,121 @@
+{
+  "title": "Faculties avialable at EduPrime",
+  "rich": "A single university with a load of courses, tailored to satisfy any student's needs",
+  "sections": [
+    {
+      "id": "FI-1",
+      "title": "Law Faculty",
+      "hasIcon": true,
+      "icon": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Gavel-v2.png?raw=true",
+        "alt": "Law Faculty"
+      },
+      "image": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Gavel-Illustration-e1556884768193.png?raw=true",
+        "alt": "Law Faculty"
+      },
+      "hasButton": true,
+      "button": {
+        "text": "Read More",
+        "link": "#",
+        "variant": "fourth",
+        "size": "lg",
+        "hasIcon": false,
+        "icon": ""
+      },
+      "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?"
+    },
+    {
+      "id": "FI-2",
+      "title": "Economy",
+      "hasIcon": true,
+      "icon": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Coins-tabs-v2.png?raw=true",
+        "alt": "Economy"
+      },
+      "image": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Economy.png?raw=true",
+        "alt": "Economy Faculty"
+      },
+      "hasButton": true,
+      "button": {
+        "text": "Read More",
+        "link": "#",
+        "variant": "fourth",
+        "size": "lg",
+        "hasIcon": false,
+        "icon": ""
+      },
+      "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?"
+    },
+    {
+      "id": "FI-3",
+      "title": "Medicine",
+      "hasIcon": true,
+      "icon": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Medicine-tabs-v2.png?raw=true",
+        "alt": "Medicine Faculty"
+      },
+      "image": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Medicine.png?raw=true",
+        "alt": "Medicine Faculty"
+      },
+      "hasButton": true,
+      "button": {
+        "text": "Read More",
+        "link": "#",
+        "variant": "fourth",
+        "size": "lg",
+        "hasIcon": false,
+        "icon": ""
+      },
+      "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?"
+    },
+    {
+      "id": "FI-4",
+      "title": "Computer Science",
+      "hasIcon": true,
+      "icon": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Computer-tabs-v2.png?raw=true",
+        "alt": "Computer Science Faculty"
+      },
+      "image": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Computer-Science.png?raw=true",
+        "alt": "Computer Science Faculty"
+      },
+      "hasButton": true,
+      "button": {
+        "text": "Read More",
+        "link": "#",
+        "variant": "fourth",
+        "size": "lg",
+        "hasIcon": false,
+        "icon": ""
+      },
+      "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?"
+    },
+    {
+      "id": "FI-5",
+      "title": "Graphic Design",
+      "hasIcon": true,
+      "icon": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Palette-tabs-v2.png?raw=true",
+        "alt": "Palette Faculty"
+      },
+      "image": {
+        "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Graphic-Design.png?raw=true",
+        "alt": "Law Faculty"
+      },
+      "hasButton": true,
+      "button": {
+        "text": "Discover the Method",
+        "link": "#",
+        "variant": "fourth",
+        "size": "lg",
+        "hasIcon": false,
+        "icon": ""
+      },
+      "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?"
+    }
+  ]
+}

@@ -15,6 +15,8 @@ $mt-light-gray: #444444;
 $mt-text-color: $mt-gray;
 $mt-text-color-dark: $mt-black;
 $mt-text-color-light: $mt-light-gray;
+$mt-text-color-white: $mt-white;
+$mt-text-color-red: $mt-red;
 
 // font sizes
 $mt-font-size-xxs: 0.618rem;
@@ -78,4 +80,4 @@ $mt-spacing-lg: 2rem;
 $mt-spacing-xl: 4rem;
 
 // shadows
-$mt-shadow-default: 0 10px 15px -4px rgba(23, 23, 23, 0.2);
+$mt-shadow-default: 0 0px 10px -1px rgba(23, 23, 23, 0.1);
