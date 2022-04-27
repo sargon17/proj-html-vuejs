@@ -6,8 +6,13 @@
     <MultiDescriptionComponent :content="facultiesIntro" />
     <WaveElement :variant="'top'" />
     <PaperElement :styleVariant="'secondary'">
-      <ContainerElement :contentPosition="'center center'" :height="'70vh'">
+      <ContainerElement :contentPosition="'center center'" :height="'80vh'">
         <YearSection />
+      </ContainerElement>
+    </PaperElement>
+    <PaperElement :styleVariant="'secondary'">
+      <ContainerElement :contentPosition="'center center'" :height="'80vh'">
+        <EventsSection />
       </ContainerElement>
     </PaperElement>
     <WaveElement :variant="'bottom'" />
@@ -32,6 +37,7 @@ import facultiesIntro from "./../data/facultiesIntro.json";
 import WaveElement from "./components_library/WaveElement.vue";
 import PaperElement from "./components_library/PaperElement.vue";
 import YearSection from "./YearSection.vue";
+import EventsSection from "./EventsSection.vue";
 export default {
   name: "MainComponent",
   data() {
@@ -48,6 +54,7 @@ export default {
     WaveElement,
     PaperElement,
     YearSection,
+    EventsSection,
   },
 };
 </script>
