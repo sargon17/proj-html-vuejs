@@ -44,7 +44,7 @@ export default {
 .container {
   padding: 20px;
   width: 100%;
-  max-width: $mt-screen-xl;
+  max-width: $mt-screen-lg;
   margin: 0 auto;
   display: flex;
   align-items: center;

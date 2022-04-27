@@ -1,0 +1,23 @@
+{
+  "id": "CI-01",
+  "title": " Thousands of courses for any type of student",
+  "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?",
+  "image": {
+    "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Graduation-Illustration.png?raw=true",
+    "alt": "Graduation Illustration"
+  },
+  "hasButton": true,
+  "button": {
+    "text": "Browse Courses",
+    "link": "#",
+    "variant": "secondary",
+    "size": "lg",
+    "hasIcon": false,
+    "icon": ""
+  },
+  "hasInitialImg": true,
+  "initialImg": {
+    "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Books-icon.png?raw=true",
+    "alt": "Books Icon"
+  }
+}

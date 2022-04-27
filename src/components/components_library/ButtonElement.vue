@@ -8,7 +8,7 @@
 export default {
   name: "ButtonElement",
   props: {
-    dimensions: {
+    size: {
       type: String,
       default: "lg",
     },
@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     buttonClass() {
-      return `btn btn-${this.variant} btn-${this.dimensions} ${
+      return `btn btn-${this.variant} btn-${this.size} ${
         this.caps ? "btn-caps" : ""
       }`;
     },

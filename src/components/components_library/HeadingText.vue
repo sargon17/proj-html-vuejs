@@ -58,9 +58,9 @@ export default {
   }
 }
 .black {
-  color: #000;
+  color: $mt-text-color;
   & * {
-    color: #000;
+    color: $mt-text-color;
   }
 }
 </style>

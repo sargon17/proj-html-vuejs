@@ -9,6 +9,12 @@ $mt-white: #fff;
 $mt-black: #000;
 $mt-gray: #323232;
 $mt-white-gray: #ebebeb;
+$mt-light-gray: #444444;
+
+// text colors
+$mt-text-color: $mt-gray;
+$mt-text-color-dark: $mt-black;
+$mt-text-color-light: $mt-light-gray;
 
 // font sizes
 $mt-font-size-xxs: 0.618rem;
@@ -41,9 +47,9 @@ $mt-btn-primary-color: $mt-white;
 $mt-btn-primary-color-hover: $mt-red;
 // secondary button styles
 $mt-btn-secondary-bg: $mt-yellow;
-$mt-btn-secondary-bg-hover: $mt-white;
+$mt-btn-secondary-bg-hover: $mt-red;
 $mt-btn-secondary-color: $mt-white;
-$mt-btn-secondary-color-hover: $mt-red;
+$mt-btn-secondary-color-hover: $mt-white;
 // tertiary button styles
 $mt-btn-tertiary-bg: $mt-white;
 $mt-btn-tertiary-bg-hover: $mt-yellow;

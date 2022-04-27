@@ -1,12 +1,15 @@
 <template>
   <div class="grid">
     <div
-      v-for="element in gridElements"
+      v-for="n in parseInt(grids)"
       class="grid-element"
-      :key="element"
+      :key="n"
       :class="gridElementClasses"
+      :style="gridElementStyles"
     >
-      <slot :name="`element-${element}`" />
+      <slot
+        :name="`element-${order === 'normal' ? n : parseInt(grids) + 1 - n}`"
+      />
     </div>
   </div>
 </template>
@@ -14,11 +17,6 @@
 <script>
 export default {
   name: "GridElement",
-  data() {
-    return {
-      gridElements: [],
-    };
-  },
   props: {
     subdivision: {
       type: String,
@@ -27,6 +25,14 @@ export default {
     grids: {
       type: String,
       default: "2",
+    },
+    spacing: {
+      type: String,
+      default: "0",
+    },
+    order: {
+      type: String,
+      default: "normal",
     },
   },
 
@@ -46,22 +52,10 @@ export default {
         "grid-element-12": this.grids === "12",
       };
     },
-  },
-  watch: {
-    grids() {
-      this.setGridElements();
-    },
-  },
-  mounted() {
-    this.setGridElements();
-  },
-  methods: {
-    setGridElements() {
-      this.gridElements = [];
-      for (let i = 1; i <= parseInt(this.grdis); i++) {
-        console.log(i);
-        this.gridElements.push(i);
-      }
+    gridElementStyles() {
+      return {
+        padding: `0 ${this.spacing / 2}px`,
+      };
     },
   },
 };

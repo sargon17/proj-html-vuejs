@@ -107,7 +107,7 @@ export default {
     border-radius: $mt-border-radius-xl;
     box-shadow: $mt-shadow-default;
     z-index: 10;
-    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     opacity: 0;
     overflow: hidden;
     height: 0;

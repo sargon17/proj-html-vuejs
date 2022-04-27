@@ -1,35 +1,35 @@
 <template>
   <div>
-    <ContainerElement :contentPosition="'center center'" :height="'100vh'">
-      <GridElement :grids="'3'">
-        <template #element-1>
-          <ContainerElement :contentPosition="'center bottom'">
-            <h1>First block</h1>
-          </ContainerElement>
-        </template>
-        <template #element-2>
-          <ContainerElement :contentPosition="'left center'">
-            <h1>Second Block</h1>
-          </ContainerElement>
-        </template>
-        <template #element-3>
-          <ContainerElement :contentPosition="'left center'">
-            <h1>Third Block</h1>
-          </ContainerElement>
-        </template>
-      </GridElement>
+    <ContainerElement :contentPosition="'center center'" :height="'70vh'">
+      <AsideDescElement :content="coursesIntro" />
+    </ContainerElement>
+    <ContainerElement
+      :contentPosition="'center center'"
+      v-for="feature in schoolDescription"
+      :key="feature.id"
+      :height="'60vh'"
+    >
+      <AsideDescElement :content="feature" :textSide="feature.textSide" />
     </ContainerElement>
   </div>
 </template>
 
 <script>
 import ContainerElement from "./components_library/ContainerElement.vue";
-import GridElement from "./components_library/GridElement.vue";
+import AsideDescElement from "./components_library/AsideDescElement.vue";
+import coursesIntro from "./../data/coursesIntro.json";
+import schoolDescription from "./../data/schoolDescription.json";
 export default {
   name: "MainComponent",
+  data() {
+    return {
+      coursesIntro,
+      schoolDescription,
+    };
+  },
   components: {
     ContainerElement,
-    GridElement,
+    AsideDescElement,
   },
 };
 </script>
