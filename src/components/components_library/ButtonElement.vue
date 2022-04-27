@@ -20,12 +20,20 @@ export default {
       type: Boolean,
       default: false,
     },
+    boxShadow: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     buttonClass() {
-      return `btn btn-${this.variant} btn-${this.size} ${
-        this.caps ? "btn-caps" : ""
-      }`;
+      return {
+        btn: true,
+        [`btn-${this.size}`]: true,
+        [`btn-${this.variant}`]: true,
+        "btn-caps": this.caps,
+        "btn-shadow": this.boxShadow,
+      };
     },
   },
 };
@@ -84,17 +92,24 @@ export default {
 
 // styles for button sizes
 .btn-lg {
-  padding: 1.3rem 3rem;
+  padding: $mt-btn-lg;
 }
 .btn-md {
-  padding: 1.3rem 2rem;
+  padding: $mt-btn-md;
 }
 .btn-sm {
-  padding: 0.8rem 1.5rem;
+  padding: $mt-btn-sm;
+}
+.btn-xs {
+  padding: $mt-btn-xs;
 }
 
 // text styling
 .btn-caps {
   text-transform: uppercase;
+}
+
+.btn-shadow {
+  box-shadow: $mt-shadow-default;
 }
 </style>

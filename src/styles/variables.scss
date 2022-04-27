@@ -9,7 +9,7 @@ $mt-white: #fff;
 $mt-black: #000;
 $mt-gray: #323232;
 $mt-white-gray: #ebebeb;
-$mt-light-gray: #444444;
+$mt-light-gray: #585858;
 
 /* bg colors */
 $mt-bg-primary: $mt-white;
@@ -70,6 +70,12 @@ $mt-btn-fourth-bg: $mt-red;
 $mt-btn-fourth-bg-hover: $mt-yellow;
 $mt-btn-fourth-color: $mt-white;
 $mt-btn-fourth-color-hover: $mt-white;
+
+/* btn dimensions {padding} */
+$mt-btn-xs: 0.6rem 1rem;
+$mt-btn-sm: 0.8rem 1.5rem;
+$mt-btn-md: 1.3rem 2rem;
+$mt-btn-lg: 1.5rem 3rem;
 
 /* transition */
 $mt-transition: all 0.3s ease-in-out;

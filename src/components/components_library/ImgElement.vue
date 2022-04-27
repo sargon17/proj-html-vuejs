@@ -20,7 +20,7 @@ export default {
     },
     custom: {
       type: Object,
-      // default: {},
+      default: () => ({}),
     },
   },
   computed: {
