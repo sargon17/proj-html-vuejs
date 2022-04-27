@@ -1,7 +1,7 @@
 $mt-font-family: "Open Sans", sans-serif;
 $mt-font-family-accent: "Nunito", sans-serif;
 
-// colors
+/* colors */
 $mt-red-transparent: #da5f60e6;
 $mt-red: #e56768;
 $mt-yellow: #e9d758;
@@ -11,14 +11,22 @@ $mt-gray: #323232;
 $mt-white-gray: #ebebeb;
 $mt-light-gray: #444444;
 
-// text colors
+/* bg colors */
+$mt-bg-primary: $mt-white;
+$mt-bg-secondary: $mt-red;
+$mt-bg-tertiary: $mt-red;
+$mt-bg-quaternary: $mt-red;
+$mt-bg-quinary: $mt-red;
+$mt-bg-senary: $mt-red;
+
+/* text colors */
 $mt-text-color: $mt-gray;
 $mt-text-color-dark: $mt-black;
 $mt-text-color-light: $mt-light-gray;
 $mt-text-color-white: $mt-white;
 $mt-text-color-red: $mt-red;
 
-// font sizes
+/* font sizes */
 $mt-font-size-xxs: 0.618rem;
 $mt-font-size-xs: 1rem;
 $mt-font-size-sm: 1.618rem;
@@ -26,14 +34,14 @@ $mt-font-size-md: 2rem;
 $mt-font-size-lg: 3rem;
 $mt-font-size-xl: 4rem;
 
-// font weights
+/* font weights */
 $mt-font-weight-light: 300;
 $mt-font-weight-regular: 400;
 $mt-font-weight-medium: 500;
 $mt-font-weight-bold: 700;
 $mt-font-weight-black: 900;
 
-// Breakpoints
+/* Breakpoints */
 $mt-screen-xxs: 0px;
 $mt-screen-xs: 320px;
 $mt-screen-sm: 600px;
@@ -41,43 +49,43 @@ $mt-screen-md: 960px;
 $mt-screen-lg: 1280px;
 $mt-screen-xl: 1920px;
 
-// buttons
-// primary button styles
+/* buttons */
+/* primary button styles */
 $mt-btn-primary-bg: $mt-yellow;
 $mt-btn-primary-bg-hover: $mt-white;
 $mt-btn-primary-color: $mt-white;
 $mt-btn-primary-color-hover: $mt-red;
-// secondary button styles
+/* secondary button styles */
 $mt-btn-secondary-bg: $mt-yellow;
 $mt-btn-secondary-bg-hover: $mt-red;
 $mt-btn-secondary-color: $mt-white;
 $mt-btn-secondary-color-hover: $mt-white;
-// tertiary button styles
+/* tertiary button styles */
 $mt-btn-tertiary-bg: $mt-white;
 $mt-btn-tertiary-bg-hover: $mt-yellow;
 $mt-btn-tertiary-color: $mt-red;
 $mt-btn-tertiary-color-hover: $mt-white;
-// fourth button styles
+/* fourth button styles */
 $mt-btn-fourth-bg: $mt-red;
 $mt-btn-fourth-bg-hover: $mt-yellow;
 $mt-btn-fourth-color: $mt-white;
 $mt-btn-fourth-color-hover: $mt-white;
 
-// transition
+/* transition */
 $mt-transition: all 0.3s ease-in-out;
 
-// border radius
+/* border radius */
 $mt-border-radius-sm: 0.125rem;
 $mt-border-radius-md: 0.25rem;
 $mt-border-radius-lg: 0.5rem;
 $mt-border-radius-xl: 1rem;
 
-// spacing
+/* spacing */
 $mt-spacing-xs: 0.25rem;
 $mt-spacing-sm: 0.5rem;
 $mt-spacing-md: 1rem;
 $mt-spacing-lg: 2rem;
 $mt-spacing-xl: 4rem;
 
-// shadows
+/* shadows */
 $mt-shadow-default: 0 0px 10px -1px rgba(23, 23, 23, 0.1);

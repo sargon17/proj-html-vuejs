@@ -4,6 +4,13 @@
       <AsideDescElement :content="coursesIntro" />
     </ContainerElement>
     <MultiDescriptionComponent :content="facultiesIntro" />
+    <WaveElement :variant="'top'" />
+    <PaperElement :styleVariant="'secondary'">
+      <ContainerElement :contentPosition="'center center'" :height="'70vh'">
+        <YearSection />
+      </ContainerElement>
+    </PaperElement>
+    <WaveElement :variant="'bottom'" />
     <ContainerElement
       :contentPosition="'center center'"
       v-for="feature in schoolDescription"
@@ -22,6 +29,9 @@ import coursesIntro from "./../data/coursesIntro.json";
 import schoolDescription from "./../data/schoolDescription.json";
 import MultiDescriptionComponent from "./components_library/MultiDescriptionComponent.vue";
 import facultiesIntro from "./../data/facultiesIntro.json";
+import WaveElement from "./components_library/WaveElement.vue";
+import PaperElement from "./components_library/PaperElement.vue";
+import YearSection from "./YearSection.vue";
 export default {
   name: "MainComponent",
   data() {
@@ -35,6 +45,9 @@ export default {
     ContainerElement,
     AsideDescElement,
     MultiDescriptionComponent,
+    WaveElement,
+    PaperElement,
+    YearSection,
   },
 };
 </script>
