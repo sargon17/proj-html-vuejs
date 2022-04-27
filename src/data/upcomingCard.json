@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Coaching Sessions",
+    "id": "UC-CS1",
+    "position": "element-1",
+    "infoTags": [
+      {
+        "title": "",
+        "info": "20 May 21:30",
+        "isInfoBold": false,
+        "icon": "fa-solid fa-calendar-days"
+      }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget nunc eget nunc tincidunt euismod.",
+    "image": "",
+    "hasButton": true,
+    "button": {
+      "text": "Find More",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "boxShadow": true,
+      "icon": "fa-solid fa-plus"
+    }
+  },
+  {
+    "title": "Coaching Sessions",
+    "id": "UC-CS2",
+    "position": "element-2",
+    "infoTags": [
+      {
+        "title": "",
+        "info": "24 Mar 18:00",
+        "isInfoBold": false,
+        "icon": "fa-solid fa-calendar-days"
+      }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget nunc eget nunc tincidunt euismod.",
+    "image": "",
+    "hasButton": true,
+    "button": {
+      "text": "Find More",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "boxShadow": true,
+      "icon": "fa-solid fa-plus"
+    }
+  },
+  {
+    "title": "Coaching Sessions",
+    "id": "UC-CS3",
+    "position": "element-3",
+    "infoTags": [
+      {
+        "title": "",
+        "info": "12 Feb 13:30",
+        "isInfoBold": false,
+        "icon": "fa-solid fa-calendar-days"
+      }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget nunc eget nunc tincidunt euismod.",
+    "image": "",
+    "hasButton": true,
+    "button": {
+      "text": "Find More",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "icon": "fa-solid fa-plus",
+      "boxShadow": true
+    }
+  }
+]
