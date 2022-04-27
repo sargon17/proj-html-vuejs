@@ -34,8 +34,8 @@
 <script>
 import bgImg from "../assets/theme_slider1_bg-1.jpg";
 import wave from "../assets/Wave-1.png";
-import HeadingText from "./sub_components/HeadingText.vue";
-import ButtonElement from "./sub_components/ButtonElement.vue";
+import HeadingText from "./components_library/HeadingText.vue";
+import ButtonElement from "./components_library/ButtonElement.vue";
 
 export default {
   name: "HeroComponent",

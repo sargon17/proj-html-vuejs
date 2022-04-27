@@ -20,8 +20,8 @@
 
 <script>
 import logo from "../assets/theme_eduprime_logo.png";
-import ButtonElement from "./sub_components/ButtonElement.vue";
-import NavigationDropdown from "./sub_components/NavigationDropdown.vue";
+import ButtonElement from "./components_library/ButtonElement.vue";
+import NavigationDropdown from "./components_library/NavigationDropdown.vue";
 import headerNavigationData from "../data/headerNavigationData";
 
 export default {
