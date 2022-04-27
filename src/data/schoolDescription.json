@@ -1,49 +1,49 @@
 [
   {
     "id": "SD-01",
-    "title": "The Most",
+    "title": "The Most efficient examination method",
     "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?",
     "image": {
-      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Graduation-Illustration.png?raw=true",
-      "alt": "Graduation Illustration"
+      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Exam-Illustration.png?raw=true",
+      "alt": "Exam Illustration"
     },
     "hasButton": true,
     "button": {
-      "text": "Browse Courses",
+      "text": "Discover the Method",
       "link": "#",
-      "variant": "secondary",
+      "variant": "fourth",
       "size": "lg",
       "hasIcon": false,
       "icon": ""
     },
     "hasInitialImg": true,
     "initialImg": {
-      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Books-icon.png?raw=true",
-      "alt": "Books Icon"
+      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Exam-icon.png?raw=true",
+      "alt": "Exam Icon"
     },
     "textSide": "left"
   },
   {
     "id": "SD-02",
-    "title": " Thousands of courses for any type of student",
+    "title": "Variable fees for international students",
     "rich": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, libero reprehenderit nesciunt, quidem quisquam temporibus eum dignissimos obcaecati possimus non quasi hic voluptatem officia error, laudantium recusandae consequatur molestiae fuga?",
     "image": {
-      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Graduation-Illustration.png?raw=true",
+      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Girl-Illustration.png?raw=true",
       "alt": "Graduation Illustration"
     },
     "hasButton": true,
     "button": {
-      "text": "Browse Courses",
+      "text": "List of Fees",
       "link": "#",
-      "variant": "secondary",
+      "variant": "fourth",
       "size": "lg",
       "hasIcon": false,
       "icon": ""
     },
     "hasInitialImg": true,
     "initialImg": {
-      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Books-icon.png?raw=true",
-      "alt": "Books Icon"
+      "path": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Exam-icon-1.png?raw=true",
+      "alt": "payment Icon"
     },
     "textSide": "right"
   }

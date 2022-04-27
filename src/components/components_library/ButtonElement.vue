@@ -73,6 +73,14 @@ export default {
     color: $mt-btn-tertiary-color-hover;
   }
 }
+.btn-fourth {
+  background-color: $mt-btn-fourth-bg;
+  color: $mt-btn-fourth-color;
+  &:hover {
+    background-color: $mt-btn-fourth-bg-hover;
+    color: $mt-btn-fourth-color-hover;
+  }
+}
 
 // styles for button sizes
 .btn-lg {
