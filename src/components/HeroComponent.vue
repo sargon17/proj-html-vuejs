@@ -28,6 +28,17 @@
         <img :src="bgImg" alt="" />
       </div>
     </div>
+    <div class="theme-buy-options">
+      <div class="theme-bys-options-item">
+        <font-awesome-icon icon="fa-solid fa-shopping-cart" />
+      </div>
+      <div class="theme-bys-options-item">
+        <font-awesome-icon icon="fa-solid fa-book-open" />
+      </div>
+      <div class="theme-bys-options-item">
+        <font-awesome-icon icon="fa-solid fa-life-ring" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -119,6 +130,30 @@ export default {
         object-fit: cover;
       }
     }
+  }
+}
+.theme-buy-options {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 9999;
+  background: $mt-yellow;
+  color: $mt-white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  box-shadow: 0px 12px 8px -5px rgba(0, 0, 0, 0.4);
+  transition: all 300ms linear;
+
+  &:hover {
+    box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.4);
+    transform: scale(0.99);
+    background: $mt-yellow-darker;
   }
 }
 </style>

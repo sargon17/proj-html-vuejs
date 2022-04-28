@@ -5,11 +5,11 @@
         <p>Purchase Eduprime on Evanto Market</p>
       </div>
       <div class="theme-purchaes__card">
-        <img-element :src="leafIcon" :width="'10px'" />
+        <img-element :src="leafIcon" :width="'10px'" :margin="'0 10px'" />
         <p>Purchase Theme</p>
       </div>
       <div class="theme-purchaes__card">
-        <img-element :src="releated" :width="'10px'" />
+        <img-element :src="releated" :width="'10px'" :margin="'0 10px'" />
         <p>Related Themes</p>
       </div>
     </div>
@@ -102,7 +102,6 @@ ImgElement;
   transition: all 300ms ease-in-out;
 
   p {
-    margin-left: 0.5rem;
     font-size: 0.7rem;
   }
 

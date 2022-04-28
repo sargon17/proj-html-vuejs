@@ -35,7 +35,7 @@ export default {
     },
     height: {
       type: String,
-      default: "",
+      default: "auto",
     },
     maxHeight: {
       type: String,
@@ -48,6 +48,10 @@ export default {
     onHoover: {
       type: Object,
       default: () => ({}),
+    },
+    margin: {
+      type: String,
+      default: "0 auto",
     },
   },
   computed: {
@@ -63,6 +67,7 @@ export default {
     },
     containerStyle() {
       return {
+        margin: this.margin,
         height: this.height,
         width: this.width,
         "max-width": this.maxWidth,
