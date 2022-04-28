@@ -5,7 +5,7 @@
         <grid-element :grids="'3'">
           <template #element-1>
             <div>
-              <img-element :src="logo" :maxWidth="'70%'" />
+              <img-element :src="logo" :maxWidth="'70%'" :margin="'0'" />
               <heading-text :textAlign="'left'" :type="'white'">
                 <template #rich>
                   EduPrime is the most versatile WordPress theme for educational
@@ -176,6 +176,16 @@ export default {
     font-size: $mt-font-size-sm;
     font-weight: $mt-font-weight-black;
   }
+  & a {
+    color: $mt-white;
+    text-decoration: none;
+    transition: $mt-transition;
+
+    &:hover {
+      color: $mt-white;
+      text-decoration: underline;
+    }
+  }
 }
 .search-categories {
   margin-top: 2rem;
@@ -206,6 +216,13 @@ export default {
     border-radius: $mt-border-radius-xxl;
     border: 1px solid $mt-white;
     text-transform: uppercase;
+    transition: $mt-transition;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $mt-white;
+      color: $mt-black;
+    }
   }
 }
 .rights {
