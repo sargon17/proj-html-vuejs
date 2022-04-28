@@ -8,7 +8,7 @@
     </div>
     <div class="partner-container">
       <ContainerElement :contentPosition="'center center'" :width="'30vw'">
-        <HeadingText :type="'black'" :icon="upcomingIcon" :textAlign="'center'">
+        <HeadingText :type="'black'" :textAlign="'center'">
           <template #title>Partners</template>
           <template #rich
             >Leverage agile frameworks to provide a robust synopsis for high

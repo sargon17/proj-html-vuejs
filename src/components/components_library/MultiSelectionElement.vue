@@ -43,7 +43,6 @@ export default {
   },
   methods: {
     isSelected(id) {
-      console.log(this.selected);
       return this.selected === id;
     },
     select(id) {
