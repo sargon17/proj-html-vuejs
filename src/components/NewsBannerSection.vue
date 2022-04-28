@@ -9,7 +9,7 @@
         </ContainerElement>
       </template>
       <template #element-2>
-        <ContainerElement :contentPosition="'right centre'">
+        <ContainerElement :contentPosition="'right centre'" :width="'100%'">
           <InputElement
             :btnVariant="'primary'"
             :placeholder="'Email adress...'"

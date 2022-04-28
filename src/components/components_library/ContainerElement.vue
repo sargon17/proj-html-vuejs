@@ -16,6 +16,10 @@ export default {
       type: String,
       default: "auto",
     },
+    width: {
+      type: String,
+      default: "auto",
+    },
   },
   computed: {
     containerClasses() {
@@ -32,6 +36,7 @@ export default {
     containerStyles() {
       return {
         height: this.height,
+        width: this.width,
       };
     },
   },

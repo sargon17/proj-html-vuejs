@@ -34,6 +34,11 @@
         <NewsBannerSection />
       </ContainerElement>
     </PaperElement>
+    <PaperElement :styleVariant="'primary'">
+      <ContainerElement :contentPosition="'center center'">
+        <PartnersSection />
+      </ContainerElement>
+    </PaperElement>
   </div>
 </template>
 
@@ -50,6 +55,7 @@ import YearSection from "./YearSection.vue";
 import EventsSection from "./EventsSection.vue";
 import LatestCoursesSection from "./LatestCoursesSection.vue";
 import NewsBannerSection from "./NewsBannerSection.vue";
+import PartnersSection from "./PartnersSection.vue";
 
 export default {
   name: "MainComponent",
@@ -70,6 +76,7 @@ export default {
     EventsSection,
     LatestCoursesSection,
     NewsBannerSection,
+    PartnersSection,
   },
 };
 </script>

@@ -1,10 +1,21 @@
 <template>
-  <img :src="src" alt="" :style="imgStyles" />
+  <div
+    :style="containerStyle"
+    @mouseover="hooverEffectToggle"
+    @mouseleave="hooverEffectToggle"
+  >
+    <img :src="src" alt="" :style="imgStyles" :height="height" />
+  </div>
 </template>
 
 <script>
 export default {
   name: "ImgElement",
+  data() {
+    return {
+      isHoovered: false,
+    };
+  },
   props: {
     src: {
       type: String,
@@ -22,18 +33,46 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    height: {
+      type: String,
+      default: "",
+    },
+    maxHeight: {
+      type: String,
+      default: "",
+    },
+    imgFit: {
+      type: String,
+      default: "cover",
+    },
+    onHoover: {
+      type: Object,
+      default: () => ({}),
+    },
   },
   computed: {
     imgStyles() {
-      if (this.width === "auto") {
-        return "";
-      }
       let customStyle = this.custom;
+      if (this.isHoovered) {
+        customStyle = this.onHoover;
+      }
       return {
-        width: this.width,
-        "max-width": this.maxWidth,
+        "object-fit": this.imgFit,
         ...customStyle,
       };
+    },
+    containerStyle() {
+      return {
+        height: this.height,
+        width: this.width,
+        "max-width": this.maxWidth,
+        "max-height": this.maxHeight,
+      };
+    },
+  },
+  methods: {
+    hooverEffectToggle() {
+      this.isHoovered = !this.isHoovered;
     },
   },
 };

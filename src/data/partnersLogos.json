@@ -1,0 +1,50 @@
+[
+  {
+    "id": "PL-M1",
+    "name": "Medals",
+    "position": "element-1",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-2.png?raw=true"
+  },
+  {
+    "id": "PL-I2",
+    "name": "Ideas",
+    "position": "element-2",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-3.png?raw=true"
+  },
+  {
+    "id": "PL-B3",
+    "name": "Books",
+    "position": "element-3",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-4.png?raw=true"
+  },
+  {
+    "id": "PL-SB4",
+    "name": "School Building",
+    "position": "element-4",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-5.png?raw=true"
+  },
+  {
+    "id": "PL-HM5",
+    "name": "Hand Made",
+    "position": "element-5",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-6.png?raw=true"
+  },
+  {
+    "id": "PL-C6",
+    "name": "Cup",
+    "position": "element-6",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-8.png?raw=true"
+  },
+  {
+    "id": "PL-PP7",
+    "name": "Paper Plane",
+    "position": "element-7",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-1.png?raw=true"
+  },
+  {
+    "id": "PL-C8",
+    "name": "Comunication",
+    "position": "element-8",
+    "img": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/partner-7.png?raw=true"
+  }
+]
