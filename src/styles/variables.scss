@@ -18,6 +18,7 @@ $mt-bg-tertiary: $mt-red;
 $mt-bg-quaternary: $mt-red;
 $mt-bg-quinary: $mt-red;
 $mt-bg-senary: $mt-red;
+$mt-bg-input: $mt-white;
 
 /* text colors */
 $mt-text-color: $mt-gray;
@@ -72,6 +73,7 @@ $mt-btn-fourth-color: $mt-white;
 $mt-btn-fourth-color-hover: $mt-white;
 
 /* btn dimensions {padding} */
+$mt-btn-icon: 1.5rem;
 $mt-btn-xs: 0.6rem 1rem;
 $mt-btn-sm: 0.8rem 1.5rem;
 $mt-btn-md: 1.3rem 2rem;
@@ -85,6 +87,7 @@ $mt-border-radius-sm: 0.125rem;
 $mt-border-radius-md: 0.25rem;
 $mt-border-radius-lg: 0.5rem;
 $mt-border-radius-xl: 1rem;
+$mt-border-radius-round: 50%;
 
 /* spacing */
 $mt-spacing-xs: 0.25rem;

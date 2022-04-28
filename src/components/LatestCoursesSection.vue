@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeadingText :type="'blck'" :icon="upcomingIcon" :textAlign="left">
+    <HeadingText :type="'black'" :icon="upcomingIcon" :textAlign="'left'">
       <template #title>Latest Courses</template>
     </HeadingText>
     <GridElement :grids="latestCoursesCards.length.toString()">

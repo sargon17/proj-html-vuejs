@@ -1,5 +1,5 @@
 <template>
-  <div class="grid">
+  <div class="grid" :class="gridClasses">
     <div
       v-for="n in parseInt(grids)"
       class="grid-element"
@@ -30,6 +30,10 @@ export default {
       type: String,
       default: "0",
     },
+    align: {
+      type: String,
+      default: "center",
+    },
     order: {
       type: String,
       default: "normal",
@@ -52,6 +56,16 @@ export default {
         "grid-element-12": this.grids === "12",
       };
     },
+    gridClasses() {
+      return {
+        "grid-center": this.align === "center",
+        "grid-left": this.align === "left",
+        "grid-right": this.align === "right",
+        "grid-space-between": this.spacing === "between",
+        "grid-space-around": this.spacing === "around",
+        "grid-space-evenly": this.spacing === "evenly",
+      };
+    },
     gridElementStyles() {
       return {
         padding: `0 ${this.spacing / 2}px`,
@@ -72,6 +86,25 @@ export default {
   height: 100%;
   width: 100%;
 }
+.grid-center {
+  justify-content: center;
+}
+.grid-left {
+  justify-content: flex-start;
+}
+.grid-right {
+  justify-content: flex-end;
+}
+.grid-space-between {
+  justify-content: space-between;
+}
+.grid-space-around {
+  justify-content: space-around;
+}
+.grid-space-evenly {
+  justify-content: space-evenly;
+}
+
 .grid-element {
   width: 100%;
   max-width: $mt-screen-xl;

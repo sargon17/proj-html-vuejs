@@ -103,6 +103,13 @@ export default {
 .btn-xs {
   padding: $mt-btn-xs;
 }
+.btn-icon {
+  padding: $mt-btn-icon;
+  border-radius: $mt-border-radius-round;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // text styling
 .btn-caps {

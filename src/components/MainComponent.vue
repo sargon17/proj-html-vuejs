@@ -29,6 +29,11 @@
     >
       <AsideDescElement :content="feature" :textSide="feature.textSide" />
     </ContainerElement>
+    <PaperElement :styleVariant="'secondary'">
+      <ContainerElement :contentPosition="'center center'" :height="'30vh'">
+        <NewsBannerSection />
+      </ContainerElement>
+    </PaperElement>
   </div>
 </template>
 
@@ -44,6 +49,7 @@ import PaperElement from "./components_library/PaperElement.vue";
 import YearSection from "./YearSection.vue";
 import EventsSection from "./EventsSection.vue";
 import LatestCoursesSection from "./LatestCoursesSection.vue";
+import NewsBannerSection from "./NewsBannerSection.vue";
 
 export default {
   name: "MainComponent",
@@ -63,6 +69,7 @@ export default {
     YearSection,
     EventsSection,
     LatestCoursesSection,
+    NewsBannerSection,
   },
 };
 </script>
