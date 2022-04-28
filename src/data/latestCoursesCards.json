@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Make Better Decisions",
+    "id": "LCS-MBD1",
+    "position": "element-1",
+    "infoTags": [
+      {
+        "id": "info-1",
+        "title": "Teacher",
+        "info": "James Colins",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-user"
+      },
+      {
+        "id": "info-2",
+        "title": "Price",
+        "info": "$21.00",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-money-bill-1"
+      }
+    ],
+    "description": "",
+    "image": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Decisions-icon.png?raw=true",
+    "hasButton": true,
+    "button": {
+      "text": "View Course",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "boxShadow": true,
+      "icon": "fa-solid fa-eye"
+    }
+  },
+  {
+    "title": "How to be a speaker",
+    "id": "LCS-HBS2",
+    "position": "element-2",
+    "infoTags": [
+      {
+        "id": "info-1",
+        "title": "Teacher",
+        "info": "James Colins",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-user"
+      },
+      {
+        "id": "info-2",
+        "title": "Price",
+        "info": "Free",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-money-bill-1"
+      }
+    ],
+    "description": "",
+    "image": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Speaker-icon.png?raw=true",
+    "hasButton": true,
+    "button": {
+      "text": "View Course",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "boxShadow": true,
+      "icon": "fa-solid fa-eye"
+    }
+  },
+  {
+    "title": "Network Introductions",
+    "id": "LCS-NI3",
+    "position": "element-3",
+    "infoTags": [
+      {
+        "id": "info-1",
+        "title": "Teacher",
+        "info": "James Colins",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-user"
+      },
+      {
+        "id": "info-2",
+        "title": "Price",
+        "info": "Free",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-money-bill-1"
+      }
+    ],
+    "description": "",
+    "image": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Network-icon.png?raw=true",
+    "hasButton": true,
+    "button": {
+      "text": "View Course",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "boxShadow": true,
+      "icon": "fa-solid fa-eye"
+    }
+  },
+  {
+    "title": "Brand Management",
+    "id": "LCS-MB4",
+    "position": "element-4",
+    "infoTags": [
+      {
+        "id": "info-1",
+        "title": "Teacher",
+        "info": "James Colins",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-user"
+      },
+      {
+        "id": "info-2",
+        "title": "Price",
+        "info": "Free",
+        "isInfoBold": true,
+        "icon": "fa-solid fa-money-bill-1"
+      }
+    ],
+    "description": "",
+    "image": "https://github.com/sargon17/proj-html-vuejs/blob/main/src/assets/Brand-icon.png?raw=true",
+    "hasButton": true,
+    "button": {
+      "text": "View Course",
+      "link": "#",
+      "variant": "fourth",
+      "size": "lg",
+      "hasIcon": false,
+      "boxShadow": true,
+      "icon": "fa-solid fa-eye"
+    }
+  }
+]

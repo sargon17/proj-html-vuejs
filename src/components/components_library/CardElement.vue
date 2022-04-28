@@ -4,11 +4,15 @@
       <PaperElement :styleVariant="'primary'">
         <ContainerElement :contentPosition="'center center'">
           <div>
+            <ImgElement :src="content.image" :width="'100px'" />
             <h3 class="card-title">{{ content.title }}</h3>
-            <p class="card-data">
-              <font-awesome-icon :icon="content.infoTags[0].icon" />
-              {{ content.infoTags[0].info }}
-            </p>
+            <div class="card-data">
+              <InfoTagElement
+                :content="tag"
+                v-for="tag in content.infoTags"
+                :key="tag.id + tag.title"
+              />
+            </div>
             <p class="card-description">
               {{ content.description }}
             </p>
@@ -31,6 +35,8 @@
 import PaperElement from "./PaperElement.vue";
 import ContainerElement from "./ContainerElement.vue";
 import ButtonElement from "./ButtonElement.vue";
+import ImgElement from "./ImgElement.vue";
+import InfoTagElement from "./InfoTagElement.vue";
 
 export default {
   name: "CardElement",
@@ -38,6 +44,8 @@ export default {
     PaperElement,
     ContainerElement,
     ButtonElement,
+    ImgElement,
+    InfoTagElement,
   },
   props: {
     content: {

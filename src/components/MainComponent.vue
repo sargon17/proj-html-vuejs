@@ -16,6 +16,11 @@
       </ContainerElement>
     </PaperElement>
     <WaveElement :variant="'bottom'" />
+    <PaperElement :styleVariant="'primary'">
+      <ContainerElement :contentPosition="'center center'" :height="'60vh'">
+        <LatestCoursesSection />
+      </ContainerElement>
+    </PaperElement>
     <ContainerElement
       :contentPosition="'center center'"
       v-for="feature in schoolDescription"
@@ -38,6 +43,8 @@ import WaveElement from "./components_library/WaveElement.vue";
 import PaperElement from "./components_library/PaperElement.vue";
 import YearSection from "./YearSection.vue";
 import EventsSection from "./EventsSection.vue";
+import LatestCoursesSection from "./LatestCoursesSection.vue";
+
 export default {
   name: "MainComponent",
   data() {
@@ -55,6 +62,7 @@ export default {
     PaperElement,
     YearSection,
     EventsSection,
+    LatestCoursesSection,
   },
 };
 </script>
