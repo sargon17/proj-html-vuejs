@@ -2,7 +2,7 @@
   <div class="input">
     <input type="text" :placeholder="placeholder" />
     <ButtonElement :size="'icon'" :variant="btnVariant">
-      <font-awesome-icon icon="fa-solid fa-paper-plane" />
+      <font-awesome-icon :icon="btnIcon" />
     </ButtonElement>
   </div>
 </template>
@@ -22,6 +22,10 @@ export default {
     placeholder: {
       type: String,
       default: "Input here...",
+    },
+    btnIcon: {
+      type: String,
+      default: "fa-solid fa-paper-plane",
     },
   },
 };

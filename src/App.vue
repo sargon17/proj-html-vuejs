@@ -4,6 +4,7 @@
     <HeroComponent />
     <MainComponent />
     <FooterComponent />
+    <FloatingElements />
   </div>
 </template>
 
@@ -12,6 +13,8 @@ import HeaderComponent from "./components/HeaderComponent.vue";
 import HeroComponent from "./components/HeroComponent.vue";
 import MainComponent from "./components/MainComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import FloatingElements from "./components/FloatingElements.vue";
+
 export default {
   name: "App",
   components: {
@@ -19,6 +22,7 @@ export default {
     HeroComponent,
     MainComponent,
     FooterComponent,
+    FloatingElements,
   },
 };
 </script>

@@ -1,12 +1,19 @@
 <template>
   <button :class="buttonClass">
+    <div v-if="icon" class="icon">
+      <img-element :src="icon" :maxWidth="'100%'" />
+    </div>
     <slot></slot>
   </button>
 </template>
 
 <script>
+import ImgElement from "./ImgElement.vue";
 export default {
   name: "ButtonElement",
+  components: {
+    ImgElement,
+  },
   props: {
     size: {
       type: String,
@@ -24,15 +31,35 @@ export default {
       type: Boolean,
       default: false,
     },
+    icon: {
+      type: String,
+      default: "",
+    },
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     buttonClass() {
+      if (this.icon) {
+        return {
+          btn: true,
+          [`btn-${this.size}-inner`]: true,
+          [`btn-${this.variant}`]: true,
+          "btn-caps": this.caps,
+          "btn-shadow": this.boxShadow,
+          "btn-outlined": this.outlined,
+        };
+      }
+
       return {
         btn: true,
         [`btn-${this.size}`]: true,
         [`btn-${this.variant}`]: true,
         "btn-caps": this.caps,
         "btn-shadow": this.boxShadow,
+        "btn-outlined": this.outlined,
       };
     },
   },
@@ -105,10 +132,39 @@ export default {
 }
 .btn-icon {
   padding: $mt-btn-icon;
-  border-radius: $mt-border-radius-round;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: $mt-border-radius-round;
+}
+.btn-icon-inner {
+  border-radius: $mt-border-radius-round;
+  padding: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  position: relative;
+
+  & > .icon {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+  }
+}
+
+.btn-outlined {
+  background-color: transparent;
+  color: $mt-btn-secondary-color;
+  border: 1px solid $mt-bg-tertiary;
+  &:hover {
+    background-color: $mt-bg-tertiary;
+    color: $mt-btn-primary-bg;
+  }
 }
 
 // text styling

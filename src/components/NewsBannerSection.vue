@@ -13,6 +13,7 @@
           <InputElement
             :btnVariant="'primary'"
             :placeholder="'Email adress...'"
+            :btnIcon="'fa-solid fa-paper-plane'"
           />
         </ContainerElement>
       </template>

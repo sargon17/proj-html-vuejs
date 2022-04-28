@@ -14,7 +14,7 @@ $mt-light-gray: #585858;
 /* bg colors */
 $mt-bg-primary: $mt-white;
 $mt-bg-secondary: $mt-red;
-$mt-bg-tertiary: $mt-red;
+$mt-bg-tertiary: $mt-yellow;
 $mt-bg-quaternary: $mt-red;
 $mt-bg-quinary: $mt-red;
 $mt-bg-senary: $mt-red;
@@ -30,7 +30,7 @@ $mt-text-color-red: $mt-red;
 /* font sizes */
 $mt-font-size-xxs: 0.8rem;
 $mt-font-size-xs: 1rem;
-$mt-font-size-sm: 1.618rem;
+$mt-font-size-sm: 1.2rem;
 $mt-font-size-md: 2rem;
 $mt-font-size-lg: 3rem;
 $mt-font-size-xl: 4rem;
@@ -87,6 +87,7 @@ $mt-border-radius-sm: 0.125rem;
 $mt-border-radius-md: 0.25rem;
 $mt-border-radius-lg: 0.5rem;
 $mt-border-radius-xl: 1rem;
+$mt-border-radius-xxl: 10rem;
 $mt-border-radius-round: 50%;
 
 /* spacing */
