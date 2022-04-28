@@ -34,11 +34,19 @@
         <NewsBannerSection />
       </ContainerElement>
     </PaperElement>
-    <PaperElement :styleVariant="'primary'">
-      <ContainerElement :contentPosition="'center center'">
+    <PaperElement :styleVariant="'quaternary'">
+      <div class="partners-decoration">
+        <img-element :src="partnersBackground" />
+      </div>
+      <ContainerElement :contentPosition="'center top'" :height="'70vh'">
         <PartnersSection />
       </ContainerElement>
     </PaperElement>
+    <div class="decorative-bg-elements">
+      <div class="courses-decoration">
+        <img-element :src="homeBackground" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -56,6 +64,9 @@ import EventsSection from "./EventsSection.vue";
 import LatestCoursesSection from "./LatestCoursesSection.vue";
 import NewsBannerSection from "./NewsBannerSection.vue";
 import PartnersSection from "./PartnersSection.vue";
+import ImgElement from "./components_library/ImgElement.vue";
+import homeBackground from "./../assets/home-background.png";
+import partnersBackground from "./../assets/background-wave3.png";
 
 export default {
   name: "MainComponent",
@@ -64,6 +75,8 @@ export default {
       coursesIntro,
       schoolDescription,
       facultiesIntro,
+      homeBackground,
+      partnersBackground,
     };
   },
   components: {
@@ -77,10 +90,28 @@ export default {
     LatestCoursesSection,
     NewsBannerSection,
     PartnersSection,
+    ImgElement,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../styles/general.scss";
+
+.courses-decoration {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.partners-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 </style>

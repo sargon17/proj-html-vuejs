@@ -6,7 +6,7 @@
     <GridElement :grids="latestCoursesCards.length.toString()">
       <template v-for="card in latestCoursesCards" v-slot:[card.position]>
         <ContainerElement :contentPosition="'center center'" :key="card.id">
-          <CardElement :content="card" />
+          <CardElement :content="card" :height="'300px'" />
         </ContainerElement>
       </template>
     </GridElement>

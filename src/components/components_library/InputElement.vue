@@ -38,7 +38,6 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
   border: none;
   border-radius: 500px;
   transition: all 0.3s ease;

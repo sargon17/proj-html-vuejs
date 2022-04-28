@@ -16,7 +16,7 @@ $mt-light-gray: #585858;
 $mt-bg-primary: $mt-white;
 $mt-bg-secondary: $mt-red;
 $mt-bg-tertiary: $mt-yellow;
-$mt-bg-quaternary: $mt-red;
+$mt-bg-quaternary: $mt-white-gray;
 $mt-bg-quinary: $mt-red;
 $mt-bg-senary: $mt-red;
 $mt-bg-input: $mt-white;
@@ -82,6 +82,7 @@ $mt-btn-lg: 1.5rem 3rem;
 
 /* transition */
 $mt-transition: all 0.3s ease-in-out;
+$mt-transition-press: all 100ms ease-in-out;
 
 /* border radius */
 $mt-border-radius-sm: 0.125rem;
@@ -100,3 +101,4 @@ $mt-spacing-xl: 4rem;
 
 /* shadows */
 $mt-shadow-default: 0 0px 10px 2px rgba(23, 23, 23, 0.1);
+$mt-shadow-hover: 0 0px 5px 2px rgba(23, 23, 23, 0.1);

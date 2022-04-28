@@ -1,5 +1,5 @@
 <template>
-  <div class="paper" :class="styleVariantClass">
+  <div class="paper" :class="styleVariantClass" :style="paperStyle">
     <slot />
   </div>
 </template>
@@ -12,10 +12,19 @@ export default {
       type: String,
       default: "primary",
     },
+    zIndex: {
+      type: Number,
+      default: 0,
+    },
   },
   computed: {
     styleVariantClass() {
       return `paper-${this.styleVariant}`;
+    },
+    paperStyle() {
+      return {
+        "z-index": this.zIndex,
+      };
     },
   },
 };
@@ -27,6 +36,7 @@ export default {
 .paper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .paper-primary {
   background-color: $mt-bg-primary;

@@ -9,11 +9,11 @@
         </template>
       </HeadingText>
       <div class="hero__content__buttons-container">
-        <ButtonElement :variant="'primary'" :dimensions="xl">
+        <ButtonElement :variant="'primary'" :dimensions="'xl'">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" /> Search
           courses
         </ButtonElement>
-        <ButtonElement :variant="'tertiary'" :dimensions="xl">
+        <ButtonElement :variant="'tertiary'" :dimensions="'xl'">
           <font-awesome-icon icon="fa-solid fa-user-plus" />
           Apply for university
         </ButtonElement>
@@ -43,7 +43,9 @@
 </template>
 
 <script>
-import bgImg from "../assets/theme_slider1_bg-1.jpg";
+import bgImg1 from "../assets/theme_slider1_bg-1.jpg";
+import bgImg2 from "../assets/theme_slider2_bg-1.jpg";
+import bgImg3 from "../assets/theme_slider3_bg-1.jpg";
 import wave from "../assets/Wave-1.png";
 import HeadingText from "./components_library/HeadingText.vue";
 import ButtonElement from "./components_library/ButtonElement.vue";
@@ -52,8 +54,13 @@ export default {
   name: "HeroComponent",
   data() {
     return {
-      bgImg,
+      bgImg: "",
       wave,
+      bgImg1,
+      bgImg2,
+      bgImg3,
+      bgArray: [bgImg1, bgImg2, bgImg3],
+      actualBg: 0,
       headerText: {
         title: "This title",
         rich: "Some subtitle",
@@ -63,6 +70,13 @@ export default {
   components: {
     HeadingText,
     ButtonElement,
+  },
+  mounted() {
+    this.bgImg = this.bgArray[this.actualBg];
+    setInterval(() => {
+      this.actualBg = (this.actualBg + 1) % this.bgArray.length;
+      this.bgImg = this.bgArray[this.actualBg];
+    }, 5000);
   },
 };
 </script>

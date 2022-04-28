@@ -110,7 +110,9 @@ export default {
   max-width: $mt-screen-xl;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
 }
 .grid-element-2 {
   width: calc(100% / 2);

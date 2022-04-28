@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="card">
+  <div class="card-container">
+    <div class="card" :style="cardStyles">
       <PaperElement :styleVariant="'primary'">
         <ContainerElement :contentPosition="'center center'">
           <div>
@@ -52,18 +52,41 @@ export default {
       type: Object,
       required: true,
     },
+    height: {
+      type: String,
+      default: "auto",
+    },
+  },
+  computed: {
+    cardStyles() {
+      return {
+        height: this.height,
+      };
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../styles/general.scss";
+.card-container {
+  &:hover .card {
+    box-shadow: $mt-shadow-hover;
+    transform: scale(0.995);
+  }
+
+  &:hover .card-button {
+    transform: scale(0.99) translateY(-50%);
+  }
+}
+
 .card {
   width: 100%;
   border-radius: $mt-border-radius-xl;
   overflow: hidden;
   text-align: center;
   box-shadow: $mt-shadow-default;
+  transition: $mt-transition-press;
 
   &-title {
     font-size: $mt-font-size-sm;
