@@ -8,6 +8,7 @@
               v-if="content.hasInitialImg"
               :src="content.initialImg.path"
               :width="'60px'"
+              :margin="'0'"
             />
             <HeadingText :textAlign="'left'">
               <template #title>
