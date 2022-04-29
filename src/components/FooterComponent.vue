@@ -221,7 +221,7 @@ export default {
 
     &:hover {
       background-color: $mt-white;
-      color: $mt-black;
+      color: $mt-red;
     }
   }
 }
